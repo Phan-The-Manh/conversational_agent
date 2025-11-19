@@ -19,3 +19,8 @@ def get_weather(city: str) -> str:
 def calculate_division(x: float, y: float) -> float:
     """Calculate division of x by y."""
     return x/y
+
+@tool
+def get_user_info(name: str, age: int, occupation: str) -> str:
+    """Stores user information."""
+    return f"Stored user name: {name}, age: {age}, occupation: {occupation}"
