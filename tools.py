@@ -24,3 +24,35 @@ def calculate_division(x: float, y: float) -> float:
 def get_user_info(name: str, age: int, occupation: str) -> str:
     """Stores user information."""
     return f"Stored user name: {name}, age: {age}, occupation: {occupation}"
+
+@tool
+def multiply(a: int, b: int) -> int:
+    """Multiply `a` and `b`.
+
+    Args:
+        a: First int
+        b: Second int
+    """
+    return a * b
+
+
+@tool
+def add(a: int, b: int) -> int:
+    """Adds `a` and `b`.
+
+    Args:
+        a: First int
+        b: Second int
+    """
+    return a + b
+
+
+@tool
+def divide(a: int, b: int) -> float:
+    """Divide `a` and `b`.
+
+    Args:
+        a: First int
+        b: Second int
+    """
+    return a / b
